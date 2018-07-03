@@ -1,4 +1,4 @@
-package org.springboot.learn.Controller;
+package org.springboot.learn.controller;
 
 import org.junit.Test;
 

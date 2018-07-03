@@ -1,4 +1,4 @@
-package org.springboot.learn.Controller;
+package org.springboot.learn.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
