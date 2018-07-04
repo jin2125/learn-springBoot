@@ -1,7 +1,8 @@
 package org.springboot.learn.controller;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Spring Boot
@@ -9,10 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
  * @RestController 提供实现了REST API，可以服务JSON,XML或者其他。这里是以String的形式渲染出结果。
  * @RequestMapping 提供路由信息
  */
-@RestController
+@Controller
 public class HelloWorldController {
     @RequestMapping("/")
-    public String sayHello() {
-        return "Hello, World!";
+    public String index(ModelMap map) {
+        map.addAttribute("host", "http://blog.didispace.com");
+        return "index";
     }
+
 }
